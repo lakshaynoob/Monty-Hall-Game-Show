@@ -68,6 +68,7 @@ const GameShow = () => {
       <div key={gamesPlayed} className="flex pt-20 px-40 justify-between">
         {doors.map((door, ind) => (
           <Door
+            key={ind}
             index={ind}
             isPrizeThere={door}
             firstChoice={pickedOne}
